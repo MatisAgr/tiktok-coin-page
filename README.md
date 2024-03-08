@@ -17,5 +17,10 @@ Conversely, the right of the button will validate you, showing that the user has
 
 To end with a fake PayPal payment system, to finish the valve all the way by saying that he will receive the coins in a few hours
 
+
 ## Tips
-You can go to the real [TikTok page](https://www.tiktok.com/coin?lang=fr) and keep it in SEO. This will allow you to mark the link over the localhost or file location :)
+You can go to the real [TikTok page](https://www.tiktok.com/coin?lang=fr) and keep it in history. This will allow you to mark the link over the localhost or file location :)
+
+![Preview](https://imgur.com/a/oGJ27gA)
+
+![PreviewPayement](https://imgur.com/a/y2A1hM8)
