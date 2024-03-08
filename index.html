@@ -1,0 +1,341 @@
+<!--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+<!DOCTYPE html>
+<html lang="fr">
+
+
+<!----------------------------------------------1. Head---------------------------------------------->
+<head>
+    <meta charset="UTF-8">
+    <title>(50)Pièces TikTok : achète et recharge des Pièces pour envoyer des Cadeaux</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="img/icone.ico"/>
+</head>
+<!----------------------------------------------FIN 1.----------------------------------------------->
+
+
+
+
+<body>
+  
+  
+
+
+  <!---------------------------------------------------2. Bar nav--------------------------------------------------->
+    <header>
+        <div class="logo">
+            <a href="https://tiktok.com"><img src="img/tiktok.png" alt="Logo"></a>
+        </div>
+
+        <div class="search-bar">
+            <input type="text" placeholder="Rechercher">
+            <a href="#"><div class="search-icon"></div></a>
+        </div>
+
+        <div class="upload-button">
+            <a href="https://www.tiktok.com/upload?lang=fr" class="upload-link">
+                <div class="upload-box">
+                    <img src="img/plus.png" alt="Upload" class="upload-icon">
+                    <span>Téléverser</span>
+                </div>
+            </a>
+        </div>
+
+        <div class="message-button">
+            <div class="message-icon">
+                <a href="https://www.tiktok.com/messages?lang=fr"><img src="img/message.png" alt="Messages"></a>
+            </div>
+            
+            <div class="inbox-button">
+                <div class="inbox-icon">
+                    <a href="https://www.tiktok.com/messages?lang=fr"><img src="img/inbox.png" alt="Inbox"></a>
+                </div>
+            </div>
+            <div class="user-avatar">
+                <img src="img/logo.png" alt="Avatar">
+            </div>
+    </header>
+    <!---------------------------------------------------FIN 2.----------------------------------------------------->
+    
+
+
+    <!----------------------------3. Offrir des pièces---------------------------->
+    <div class="container">
+        <h1>Offrir des Pièces</h1>
+      <div class="input-container">
+        <input class="input2" type="text" placeholder="Entrez votre pseudo">
+        <button class="buttonwaw">Vérification</button>
+      </div>
+    <!-----------------------------------FIN 3.----------------------------------->
+
+
+
+        <!-----------------------------------------------4. Pièces----------------------------------------------->
+        <h2>Recharger</h2>
+
+        <div class="grid">
+
+          <!--------------------4.1 - 70 pièces - 0.85€ -------------------->
+          <button class="grid-item" onclick="updateTotalPrice(0.85)">
+            <img src="img/cointiktok.png" alt="Pièce" class="coin-image">
+            <span class="coin-number" value="70">70</span><br>
+            <span class="coin-number-euro">€ 0.85</span>
+          </button>
+          <!-----------------------------FIN 4.1---------------------------->
+
+
+          <!--------------------4.2 - 350 pièces - 4.85€ ------------------->
+          <button class="grid-item" onclick="updateTotalPrice(4.15)">
+            <img src="img/cointiktok.png" alt="Pièce" class="coin-image">
+            <span class="coin-number" value="350">350</span><br>
+            <span class="coin-number-euro">€ 4.15</span>
+          </button>
+          <!-----------------------------FIN 4.2---------------------------->
+
+
+          <!--------------------4.3 - 700 pièces - 8.29€ ------------------->
+          <button class="grid-item" onclick="updateTotalPrice(8.29)">
+            <img src="img/cointiktok.png" alt="Pièce" class="coin-image">
+            <span class="coin-number" value="700">700</span><br>
+            <span class="coin-number-euro">€ 8.29</span>
+          </button>
+          <!-----------------------------FIN 4.3---------------------------->
+
+
+          <!--------------------4.4 - 1400 pièces - 16.49€ ----------------->
+          <button class="grid-item" onclick="updateTotalPrice(16.49)">
+            <img src="img/cointiktok.png" alt="Pièce" class="coin-image">
+            <span class="coin-number" value="1400">1,400</span><br>
+            <span class="coin-number-euro">€ 16.49</span>
+          </button>
+          <!-----------------------------FIN 4.4---------------------------->
+
+
+          <!--------------------4.5 - 3500 pièces - 41.25€ ----------------->
+          <button class="grid-item" onclick="updateTotalPrice(41.25)">
+            <img src="img/cointiktok.png" alt="Pièce" class="coin-image">
+            <span class="coin-number" value="3500">3,500</span><br>
+            <span class="coin-number-euro">€ 41.25</span>
+          </button>
+          <!-----------------------------FIN 4.5---------------------------->
+
+
+          <!--------------------4.6 - 7000 pièces - 82.09€ ----------------->
+          <button class="grid-item" onclick="updateTotalPrice(82.09)">
+            <img src="img/cointiktok.png" alt="Pièce" class="coin-image">
+            <span class="coin-number" value="7000">7,000</span><br>
+            <span class="coin-number-euro">€ 82.09</span>
+          </button>
+          <!-----------------------------FIN 4.6---------------------------->
+
+
+          <!--------------------4.7 - 17500 pièces - 205,19€ --------------->
+          <button class="grid-item" onclick="updateTotalPrice(205.19)">
+            <img src="img/cointiktok.png" alt="Pièce" class="coin-image">
+            <span class="coin-number" value="17500">17,500</span><br>
+            <span class="coin-number-euro">€ 205.19</span>
+          </button>
+          <!-----------------------------FIN 4.7---------------------------->
+
+
+          <!---------------------------------------4.8 - Perso pièces ---------------------------------------->
+          <button id="custom-case" class="grid-item" onclick="toggleCustomInput()">
+            <img src="img/cointiktok.png" alt="Pièce" class="coin-image-perso">
+            <span id="custom-text" class="coin-number-perso">Personnalisé</span><br>
+            <span id="custom-description" class="coin-number-euro-perso">Montants élevés pris en charge</span>
+          </button>
+          <!---------------------------------------------FIN 4.8---------------------------------------------->
+          
+
+        </div>
+        <!----------------------------------------------------FIN 4.---------------------------------------------------->
+
+
+
+        <!--------------------5. Mode de paiement-------------------->
+        <div class="payment-methods">
+          <p>
+            Mode de paiement
+            <img src="./img/visa.png" alt="Visa">
+            <img src="./img/mc.png" alt="Mastercard">
+            <img src="./img/maestro.png" alt="Maestro">
+            <img src="./img/american.png" alt="American Express">
+            <img src="./img/paypal.png" alt="PayPal">
+          </p>
+        </div>
+      
+        <!--------------------------FIN 5.-------------------------->
+
+
+
+      <!----------------------------------------------------------------------------6. Total----------------------------------------------------------------------------->
+      </div>
+        <div id="total-price"><span class = "total-payement">Total </span><span class ="signeeuro">€ </span><span class="euro" id="total-amount">0</span></p></div>
+        <div class="container">
+        <button id="recharge-button" class = "recharger" onclick="openPaymentPopup">Recharger</button>
+        </div>
+        <button class="support-button"></button>
+        <sup class="tiktok-ae6u8i-SupBadge">50</sup>
+      <!-----------------------------------------------------------------------------FIN 6.------------------------------------------------------------------------------>
+
+
+
+      <!-----------------7. PopUp de vérif----------------->
+        <div id="popup-left" class="popup popup-left">
+          <div class="popup-content">
+            <div class="loading-spinner"></div>
+            <p class="popup-text"></p>
+          </div>
+        </div>
+        
+        <div id="popup-right" class="popup popup-right">
+          <div class="popup-content">
+            <div class="loading-spinner"></div>
+            <p class="popup-text"></p>
+          </div>
+        </div>
+      <!----------------------FIN 7.----------------------->
+        
+
+        
+        <!---------------------------------------------8. PopUp de paiement--------------------------------------------->
+        <div id="payment-popup" class="popup-paiement">
+          <h2 class="resumer">Résumé de la commande</h2>
+
+
+          <!------------------------8.1 - Comptes------------------------>
+          <p class="compte">
+              Compte <span class="compte2" id="account-name"></span>
+          </p>
+          <p class="compte">
+            Offert par <span class="compte3">rappel.pourtoii</span>
+          </p>
+          <!---------------------------FIN 8.1--------------------------->
+
+
+          <!----8.2 - Séparation---->
+          <div class="ligne"></div>
+          <!---------FIN 8.2-------->
+
+
+          <!---------------------------------------8.3 - Pièces--------------------------------------->
+          <p class="piece">
+            <span id="coin-quantity"></span><span class="piece2" id="coin-price"></span>
+          </p> 
+          <!------------------------------------------FIN 8.3----------------------------------------->
+
+
+          <!---------------------------------------8.4 - Total---------------------------------------->
+          <p class="prix">
+               <span id="coin-quantity"> Total </span><span class="prix2" id="coin-price2"></span>
+          </p>
+          <!------------------------------------------FIN 8.4----------------------------------------->
+
+
+          <!----8.5 - Séparation---->
+          <div class="ligne"></div>
+          <!---------FIN 8.5-------->
+
+
+          <!--------------------------------------------8.6 - Mode de paiement-------------------------------------------->
+          <p class="modepaiement">
+              <span class="selectionne">Sélectionne un mode de paiement</span><span class="gerer-span">
+              <a href="#" class="gerer">Gérer</a></span>
+            </button>
+          </p>
+          <p class="paypal">
+            <input class="checkbox-paypal" type="checkbox" check>
+            <span class="paypal-checkbox"></span>
+            PayPal <span class="pseudopp">******r12 </span><img class="paypal2" src="./img/paypal.png" alt="PayPal"> 
+          </p>
+          <!----------------------------------------------------FIN 8.6--------------------------------------------------->
+        
+
+          <!-----------------------------------------8.7 - Blabla avec checkbox----------------------------------------->
+          <div class="checkbox-container">
+            <div class="checkbox-wrapper">
+              <input class="checkbox" type="checkbox" id="accept-checkbox">
+              <label for="accept-checkbox"></label>
+            </div>
+            <div class="blabla-container">
+              <label class="blabla" for="accept-checkbox">En cochant la case, j'accepte la <b>Coins Policy</b> 
+                et je demande à ce que les Pièces soient immédiatement créditées sur mon compte. Je reconnais 
+                que je perdrai mon droit de rétractation une fois les Pièces utilisées, moment auquel le contrat 
+                aura été pleinement exécuté. <br><br>En poursuivant cet achat, tu confirmes que tu résides dans 
+                la région ou le pays suivant : <b>France</b></label>
+            </div>
+          </div>
+          <!---------------------------------------------------FIN 8.7-------------------------------------------------->
+
+          
+          <!----8.8 - Séparation---->
+          <div class="ligne"></div>
+          <!---------FIN 8.8-------->
+
+
+          <!----------------------------------------8.9 - Boutons Payer et help---------------------------------------->
+          <div class="button-container">
+            <button class="help-button"><img src="./img/support.png" alt="help" width="19" height="19"></button>
+            <div class="pay-button-container">
+              <button class="pay-button" onclick="Payment()">
+                <span class="loading-spinner"></span>
+                Payer Maintenant
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+         <!---------------------------------------------------FIN 8.9-------------------------------------------------->
+
+
+         
+        <!----------------------------------------9. - Paiement validé----------------------------------------->
+        <div class="loading-spinner"></div>
+        <div id="payment-confirmation-popup" class="popup-paiement"> 
+          <div class="popup-content">
+            <h2 class="resumer">Paiement validé<input class="checkbox-paypal2" type="checkbox" check></h2>
+            <p class="compte">
+              Nom de l'émetteur <span class="compte3">rappel.pourtoii</span>
+            </p>
+
+            <!----8.8 - Séparation---->
+            <div class="ligne"></div>
+            <!---------FIN 8.8-------->
+
+
+            <p class="prix">
+              <span id="coin-quantity"> Total </span><span class="prix2" id="coin-price2"><i>Masqué par paypal</i></span>
+            </p>
+
+
+            <!----8.8 - Séparation---->
+            <div class="ligne"></div>
+            <!---------FIN 8.8-------->
+
+            <p class="paypal">
+              PayPal <span class="pseudopp">******r12 </span><img class="paypal3" src="./img/paypal.png" alt="PayPal"> 
+            </p>
+
+            <!----8.8 - Séparation---->
+            <div class="ligne"></div>
+            <!---------FIN 8.8-------->
+
+            <p class="blabla">Dans certains cas, les pièces peuvent prendre entre 30 minutes et 1 heure pour être créditées. Ce délai est dû à la vérification du paiement ainsi qu'au compte de l'émetteur. <br>En cas de problème, veuillez contacter le <b><a href="https://support.tiktok.com/fr/">support</a></b> ou consulter notre <b><a href="https://support.tiktok.com/fr/">FAQ</a></b>.</p>
+          </div>
+
+
+        </div>
+
+
+
+        <div id="overlay"></div>
+        <!---------------------------------------------------FIN 9.-------------------------------------------->        
+
+        <!----------------10. Scripts---------------->
+        <script src="js/montantPerso.js"></script>
+        <script src="js/verif.js"></script>
+        <script src="js/paiement.js"></script>
+        <!------------------FIN 10.------------------>
+
+</body>
+</html>
+<!--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
